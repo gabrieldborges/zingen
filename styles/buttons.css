@@ -1,11 +1,12 @@
 .btn {
   /* BORDER  */
   /* BORDER  */
+  --sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
   --btn-bg-color: var(--text-color-primary);
   --btn-color: var(--background-color);
   position: relative;
   overflow: hidden;
-  
+
   border: 0;
   background-color: transparent;
 
@@ -26,7 +27,6 @@
   transition: color 0.3s ease-in-out;
   z-index: 2;
 }
-
 /* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
 .btn::before{
   content: "";
@@ -36,33 +36,77 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
-opacity: 0;
+  background: var(--sunshine-gradient);
+  opacity: 0;
   transform-origin: center;
-  transition: opacity .25s ease-in-out;
+  transition: opacity .15s ease-in-out;
   z-index: -1;
 }
-.btn:hover {
+.btn:hover, .btn02:hover {
+  --btn02-bg-color:var(--sunshine-gradient) ;
   --btn-color: var(--surface-color);
   color: var(--btn-color);
 }
-.btn:hover::before{
-opacity: 1;
+ .btn:hover::before {
+  opacity: 1;
 }
-/* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
+/* TRANSIÇÃO DO BACKGROUND DO BOTÃO   */
+.btn02 {
+  /* position: relative; */
+  --sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+  --btn02-bg-color: var(--text-color-primary);
+  --btn-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
 
+  border: 0;
+  background-color: transparent;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
 
+  border-radius: 0.5rem;
 
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--font-family);
 
+  cursor: pointer;
 
+  background: var(--btn02-bg-color);
+  color: var(--btn-color);
 
+  transition: color 0.3s ease-in-out;
+  z-index: 2;
+&::before{
+content: "";
+position: absolute;
+border-radius: inherit;
+inset: 1.5px;
+background-color: var(--background-color);
+  z-index: 1;
+}
+  &::after {
+    content: attr(aria-label);
+    background: var(--btn02-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: 1;
+  }
+}
+/* ANIMATION  */
 
+.border-anim {
+  --bw: 2px;
+  --border: var(--bw) solid transparent;
+  border: var(--border);
+  transition: 0.25s;
 
-
-
-
-
+  &:hover {
+    --border: var(--bw) solid var(--text-color-primary);
+  }
+}
 
 
 .btn-sm {
@@ -76,15 +120,4 @@ opacity: 1;
 .btn-lg {
   font-size: 1.125rem;
   padding: 1rem 2rem;
-}
-
-.border-anim {
-  --bw: 2px;
-  --border: var(--bw) solid transparent;
-  border: var(--border);
-  transition: .25s;
-  
-      &:hover {
-        --border: var(--bw) solid var(--text-color-primary);
-      }
 }
