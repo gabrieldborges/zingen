@@ -1,0 +1,90 @@
+.btn {
+  /* BORDER  */
+  /* BORDER  */
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+  
+  border: 0;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  border-radius: 0.5rem;
+
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--font-family);
+
+  cursor: pointer;
+
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+
+  transition: color 0.3s ease-in-out;
+  z-index: 2;
+}
+
+/* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
+.btn::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+opacity: 0;
+  transform-origin: center;
+  transition: opacity .25s ease-in-out;
+  z-index: -1;
+}
+.btn:hover {
+  --btn-color: var(--surface-color);
+  color: var(--btn-color);
+}
+.btn:hover::before{
+opacity: 1;
+}
+/* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: 0.5rem 1rem;
+}
+.btn-md {
+  font-size: var(--fs-base);
+  padding: 0.75rem 1.5rem;
+}
+.btn-lg {
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+}
+
+.border-anim {
+  --bw: 2px;
+  --border: var(--bw) solid transparent;
+  border: var(--border);
+  transition: .25s;
+  
+      &:hover {
+        --border: var(--bw) solid var(--text-color-primary);
+      }
+}
