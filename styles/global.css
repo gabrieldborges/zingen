@@ -114,7 +114,7 @@ a {
   }
 }
 
-a:hover{
+a:not(.btn):hover{
 background: var(--sunshine-gradient);
 
 -webkit-background-clip: text ; 
@@ -127,20 +127,8 @@ color: transparent;
 
 }
 
+
 ul[role="list"] {
   list-style: none;
 }
 
-/* DELETE AQUI ABAIXO */
-/* DELETE AQUI ABAIXO */
-
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#teste {
-  display: grid; 
-   gap: 2rem;
-}
