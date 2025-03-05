@@ -1,9 +1,7 @@
 .btn {
   /* BORDER  */
   /* BORDER  */
-  --sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
-  --btn-bg-color: var(--text-color-primary);
-  --btn-color: var(--background-color);
+
   position: relative;
   overflow: hidden;
 
@@ -28,7 +26,7 @@
   z-index: 2;
 }
 /* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
-.btn::before{
+.btn::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -39,29 +37,28 @@
   background: var(--sunshine-gradient);
   opacity: 0;
   transform-origin: center;
-  transition: opacity .15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   z-index: -1;
 }
-.btn:hover, .btn02:hover {
-  --btn02-bg-color:var(--sunshine-gradient) ;
+.btn:hover,
+.btn02:hover {
+  --btn02-bg-color: var(--sunshine-gradient);
   --btn-color: var(--surface-color);
   color: var(--btn-color);
 }
- .btn:hover::before {
+.btn:hover::before {
   opacity: 1;
 }
 /* TRANSIÇÃO DO BACKGROUND DO BOTÃO   */
 .btn02 {
   /* position: relative; */
-  --sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
-  --btn02-bg-color: var(--text-color-primary);
-  --btn-color: var(--background-color);
+
   position: relative;
-  
+
   border: 0;
   background-color: transparent;
   overflow: hidden;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,14 +75,14 @@
 
   transition: color 0.3s ease-in-out;
   z-index: 2;
-&::before{
-content: "";
-position: absolute;
-border-radius: inherit;
-inset: 1.5px;
-background-color: var(--background-color);
-  z-index: 1;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 1.5px;
+    background-color: var(--background-color);
+    z-index: 1;
+  }
   &::after {
     content: attr(aria-label);
     background: var(--btn02-bg-color);
@@ -98,7 +95,6 @@ background-color: var(--background-color);
 /* ANIMATION  */
 
 .border-anim {
-  
   --bw: 3px;
   --outline: var(--bw) solid transparent;
   outline: var(--outline);
@@ -108,7 +104,6 @@ background-color: var(--background-color);
     --outline: var(--bw) solid var(--text-color-primary);
   }
 }
-
 
 .btn-sm {
   font-size: var(--fs-sm);
