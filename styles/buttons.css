@@ -57,11 +57,11 @@
   --btn02-bg-color: var(--text-color-primary);
   --btn-color: var(--background-color);
   position: relative;
-  overflow: hidden;
-
+  
   border: 0;
   background-color: transparent;
-
+  overflow: hidden;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,13 +98,14 @@ background-color: var(--background-color);
 /* ANIMATION  */
 
 .border-anim {
-  --bw: 2px;
-  --border: var(--bw) solid transparent;
-  border: var(--border);
+  
+  --bw: 3px;
+  --outline: var(--bw) solid transparent;
+  outline: var(--outline);
   transition: 0.25s;
 
   &:hover {
-    --border: var(--bw) solid var(--text-color-primary);
+    --outline: var(--bw) solid var(--text-color-primary);
   }
 }
 
