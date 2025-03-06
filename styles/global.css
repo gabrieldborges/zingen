@@ -49,6 +49,7 @@ px-lg significa padding no eixo X e py-lg significa padding no eixo Y. O lg repr
   --py-base: 1rem;
   --py-lg: 1.5rem;
   --py-xl: 3rem;
+  
 
   --px-lg: 1.5rem;
 }
@@ -77,6 +78,11 @@ html {
 
 body {
   background-color: var(--background-color);
+}
+
+img{
+  width: 100%;
+  display: inline-block;
 }
 
 h1,
