@@ -1,35 +1,31 @@
-#smartphone-img{
-background: url(../assets/images/bg-hero-mobile.svg) top/cover;
-padding-inline: 2.21875rem;
-margin-top: 2rem;
+#smartphone-img {
+  background: url(../assets/images/bg-hero-mobile.svg) top/cover;
+  padding-inline: 2.21875rem;
+  margin-top: 2rem;
 }
 
-section{
-  & header{
-    & strong{
-display: block;
-font: var(--fw-md) var(--fs-sm)/100% var(--font-family);
-text-transform: uppercase;
-letter-spacing: 0.08em;
-color: var(--brand-color-primary);
-
+section {
+  & header {
+    & strong {
+      display: block;
+      font: var(--fw-md) var(--fs-sm) / 100% var(--font-family);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-color-primary);
     }
-    & h2{
-      margin-top: .5rem;
-}
+    & h2 {
+      margin-top: 0.5rem;
+    }
   }
   & p {
-    margin-top: .5rem;
-    font: var(--fw-base) var(--fs-base)/1.6 var(--font-family);
+    margin-top: 0.5rem;
+    font: var(--fw-base) var(--fs-base) / 1.6 var(--font-family);
     color: var(--text-color-secondary);
   }
 }
 
-@media (width >= 80em){
-
-  #smartphone-img{
+@media (width >= 80em) {
+  #smartphone-img {
     display: none;
   }
 }
-
-

@@ -15,15 +15,14 @@
 /* SETUP ABOVE */
 
 :root {
-/* VARIÁVEIS DOS BOTÕES  */
+  /* VARIÁVEIS DOS BOTÕES  */
 
---sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
---btn-bg-color: var(--text-color-primary);
---btn-color: var(--background-color);
---btn02-bg-color: var(--text-color-primary);
+  --sunshine-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--background-color);
+  --btn02-bg-color: var(--text-color-primary);
 
-
-/* VARIÁVEIS DOS BOTÕES  */
+  /* VARIÁVEIS DOS BOTÕES  */
 
   --brand-color-primary: #f7b733;
   --brand-color-secondary: #fc4a1a;
@@ -49,7 +48,6 @@ px-lg significa padding no eixo X e py-lg significa padding no eixo Y. O lg repr
   --py-base: 1rem;
   --py-lg: 1.5rem;
   --py-xl: 3rem;
-  
 
   --px-lg: 1.5rem;
 }
@@ -80,7 +78,7 @@ body {
   background-color: var(--background-color);
 }
 
-img{
+img {
   width: 100%;
   display: inline-block;
 }
@@ -104,33 +102,28 @@ h3 {
   font-size: var(--fs-lg);
 }
 
-a{
+a {
   display: block;
   text-decoration: none;
   color: inherit;
   position: relative;
-  &::after{
+  &::after {
     content: "";
     width: inherit;
     height: 100%;
     border-bottom: 1px solid white;
-  
   }
 }
 
-a:not(.btn):hover, a:not(.btn):hover{
-background: var(--sunshine-gradient);
+a:not(.btn):hover,
+a:not(.btn):hover {
+  background: var(--sunshine-gradient);
 
--webkit-background-clip: text ; 
-background-clip: text;
-color: transparent;
-
-
-
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-
 
 ul[role="list"] {
   list-style: none;
 }
-
