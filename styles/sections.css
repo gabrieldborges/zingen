@@ -5,7 +5,7 @@
   /* padding-inline: 2.21875rem; */
   margin-top: 2rem;
   & img {
-    width: 100%;
+    max-width: 19.5rem;
     margin-inline: auto;
   }
   position: relative;
