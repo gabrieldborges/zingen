@@ -1,9 +1,8 @@
 #smartphone-img {
   display: flex;
   justify-content: center;
-  /* border: solid; */
   background: url(../assets/images/bg-hero-mobile.svg) no-repeat center/cover;
-  /* padding-inline: 2.21875rem; */
+  padding-inline: 2.21875rem;
   margin-top: 2rem;
   width: 100%;
   & img {
