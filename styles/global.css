@@ -78,7 +78,8 @@ html {
 
 body {
   background-color: var(--background-color);
-  max-width: 23.4375rem;
+
+  width: 100%;
   margin-inline: auto;
 }
 @media (width >= 80em) {
