@@ -33,7 +33,7 @@
   --text-color-primary: #f4f4f5;
 
   --font-family: "Inter", sans-serif, system-ui;
-
+  --ff-sans: sans-serif, system-ui;
   --fw-base: 400;
   --fw-md: 500;
   --fw-bold: 800;

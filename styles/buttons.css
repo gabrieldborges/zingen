@@ -24,7 +24,6 @@
 
   transition: color 0.3s ease-in-out;
   z-index: 2;
-  
 }
 /* TRANSIÇÃO DO BACKGROUND DO BOTÃO  */
 .btn::before {
@@ -46,7 +45,7 @@
   --btn02-bg-color: var(--sunshine-gradient);
   --btn-color: var(--surface-color);
   color: var(--btn-color);
-  -webkit-background-clip: initial ; 
+  -webkit-background-clip: initial;
   background-clip: initial;
 }
 .btn:hover::before {
@@ -121,9 +120,7 @@
   padding: 1rem 2rem;
 }
 
-
-@media (width >= 80em){
-
+@media (width >= 80em) {
   .btn-sm {
     font-size: var(--fs-base);
     padding: 0.75rem 1.5rem;
@@ -132,6 +129,4 @@
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
-
 }
-
