@@ -1,0 +1,119 @@
+footer{
+  color: var(--text-color-secondary);
+  font-weight: var(--fw-md);
+
+& .container{
+  padding-inline: 2rem;
+}
+
+
+
+  & .container, & .top {
+    gap: 3rem;
+  }
+
+  & nav.even-columns{
+    gap: 4rem;
+  }
+
+& .top ul {
+  align-content: start;
+}
+
+
+  & .title {
+    font-size: .75rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--brand-color-primary);
+  }
+
+
+ & .top{
+  
+  
+   & > img{
+    width: 5.3125rem;
+     height: 2rem;
+   }
+  }
+
+ & .bottom{
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 1.5rem;
+
+& a{
+  all: unset;
+}
+
+& a.social {
+  cursor: pointer;
+
+  --bg-img: "";
+  background: var(--bg-img);
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  display: block;
+
+  &[aria-label="tiktok"] {
+    --bg-img: url(../assets/icons/tiktok.svg);
+    &:hover {
+      --bg-img: url(../assets/icons/tiktok-hover.svg);
+    }
+  }
+  &[aria-label="instagram"] {
+    --bg-img: url(../assets/icons/instagram.svg);
+    &:hover {
+      --bg-img: url(../assets/icons/instagram-hover.svg);
+    }
+  }
+
+  &[aria-label="twitter"] {
+    --bg-img: url(../assets/icons/twitter.svg);
+    &:hover {
+      --bg-img: url(../assets/icons/twitter-hover.svg);
+    }
+  }
+
+  &[aria-label="discord"] {
+    --bg-img: url(../assets/icons/discord.svg);
+    &:hover {
+      --bg-img: url(../assets/icons/discord-hover.svg);
+    }
+  }
+}
+
+
+
+
+& span{
+  font-size: .875rem;
+}
+  }
+
+  @media (width >= 80em){
+     .container{
+      padding-inline: 0rem;
+      padding-bottom: 2rem;
+    }
+
+
+    & .top{
+      grid-template-columns: auto 1fr;
+
+      & nav{
+        margin-left: auto;
+
+        & nav{
+          width: 14rem;
+        }
+      }
+      
+    }
+  }
+
+
+}

@@ -8,7 +8,7 @@ a.social {
   display: block;
 
   &[aria-label="tiktok"] {
-    --bg-img: url(../assets/icons/tiktok.svg);
+    --bg-img: url(../assets/icons/tiktok-hover.svg);
     &:hover {
       --bg-img: url(../assets/icons/tiktok-hover.svg);
     }
