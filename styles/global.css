@@ -80,6 +80,8 @@ body {
   width: 100%;
   background-color: var(--background-color);
   margin-inline: auto;
+  overflow-x: hidden;
+
 }
 
 img {
